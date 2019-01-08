@@ -8,11 +8,22 @@
     <artifactId>learning-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <modules>
         <module>learning-design-patterns</module>
         <module>learning-java8</module>
         <module>learning-temp</module>
         <module>learning-data-structure</module>
+        <module>learning-es</module>
     </modules>
 
 
