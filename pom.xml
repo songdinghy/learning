@@ -24,6 +24,7 @@
         <module>learning-temp</module>
         <module>learning-data-structure</module>
         <module>learning-es</module>
+        <module>learning-mq</module>
     </modules>
 
 
