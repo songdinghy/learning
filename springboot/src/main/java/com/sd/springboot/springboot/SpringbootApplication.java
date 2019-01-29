@@ -1,5 +1,6 @@
 package com.sd.springboot.springboot;
 
+import com.sd.springboot.Groups;
 import com.sd.springboot.entity.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,10 +17,18 @@ public class SpringbootApplication {
 
     @RequestMapping("index")
     @ResponseBody
-    public String index(@RequestBody @Valid User user){
+    public String index(@RequestBody @Validated(Groups.Select.class) User user){
         System.out.println("user = [" + user + "]");
         return "hello";
     }
+
+    @RequestMapping("save")
+    @ResponseBody
+    public String save(@RequestBody @Validated(Groups.Add.class) User user){
+        System.out.println("user = [" + user + "]");
+        return "hello";
+    }
+
 
     /**
      *  用于测试
