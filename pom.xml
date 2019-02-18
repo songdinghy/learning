@@ -25,6 +25,9 @@
         <module>learning-data-structure</module>
         <module>learning-es</module>
         <module>learning-mq</module>
+        <module>learning-distributed</module>
+        <module>learning-drools</module>
+        <module>learning-drools</module>
     </modules>
 
 
