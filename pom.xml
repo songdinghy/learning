@@ -28,6 +28,7 @@
         <module>learning-distributed</module>
         <module>learning-drools</module>
         <module>learning-drools</module>
+        <module>learning-rpc</module>
     </modules>
 
 
