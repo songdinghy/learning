@@ -29,6 +29,7 @@
         <module>learning-drools</module>
         <module>learning-drools</module>
         <module>learning-rpc</module>
+        <module>learning-netty</module>
     </modules>
 
 
