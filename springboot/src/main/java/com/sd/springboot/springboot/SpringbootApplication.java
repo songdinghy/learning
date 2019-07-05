@@ -1,7 +1,9 @@
 package com.sd.springboot.springboot;
 
+import com.sd.learning.HttpClient;
 import com.sd.springboot.Groups;
 import com.sd.springboot.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.validation.annotation.Validated;
@@ -15,11 +17,15 @@ import javax.validation.constraints.Min;
 @Validated
 public class SpringbootApplication {
 
+    @Autowired
+    private HttpClient httpClient;
+
     @RequestMapping("index")
     @ResponseBody
     public String index(@RequestBody @Validated(Groups.Select.class) User user){
+
         System.out.println("user = [" + user + "]");
-        return "hello";
+        return httpClient.getHtml();
     }
 
     @RequestMapping("save")
