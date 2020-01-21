@@ -2126,7 +2126,7 @@
 	fetch.max.bytes = 52428800
 	fetch.max.wait.ms = 500
 	fetch.min.bytes = 1
-	group.id = test1
+	group.id = TestPdfTextField
 	heartbeat.interval.ms = 3000
 	interceptor.classes = null
 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
@@ -2182,7 +2182,7 @@
 	fetch.max.bytes = 52428800
 	fetch.max.wait.ms = 500
 	fetch.min.bytes = 1
-	group.id = test1
+	group.id = TestPdfTextField
 	heartbeat.interval.ms = 3000
 	interceptor.classes = null
 	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
@@ -2325,7 +2325,7 @@
 16:48:34.075[DEBUG][Thread-0]o.a.kafka.common.metrics.Metrics - Added sensor with name node--1.bytes-received
 16:48:34.075[DEBUG][Thread-0]o.a.kafka.common.metrics.Metrics - Added sensor with name node--1.latency
 16:48:34.075[DEBUG][Thread-1]o.a.k.clients.consumer.KafkaConsumer - Subscribed to topic(s): test, bar
-16:48:34.077[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Sending coordinator request for group test1 to broker localhost:9092 (id: -1 rack: null)
+16:48:34.077[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Sending coordinator request for group TestPdfTextField to broker localhost:9092 (id: -1 rack: null)
 16:48:34.078[DEBUG][Thread-1]o.apache.kafka.clients.NetworkClient - Initiating connection to node -1 at localhost:9092.
 16:48:34.080[DEBUG][Thread-1]o.a.kafka.common.metrics.Metrics - Added sensor with name node--1.bytes-sent
 16:48:34.080[DEBUG][Thread-1]o.a.kafka.common.metrics.Metrics - Added sensor with name node--1.bytes-received
@@ -2349,32 +2349,32 @@
 16:48:34.210[DEBUG][Thread-0]o.a.kafka.common.network.Selector - Created socket with SO_RCVBUF = 65536, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 2147483647
 16:48:34.210[DEBUG][Thread-0]o.apache.kafka.clients.NetworkClient - Completed connection to node 2147483647
 16:48:34.211[DEBUG][Thread-1]org.apache.kafka.clients.Metadata - Updated cluster metadata version 2 to Cluster(id = MHtgqdC8QHeOCtG7Woq0cA, nodes = [songding.crhd0a.crc.hk:9092 (id: 0 rack: null)], partitions = [Partition(topic = bar, partition = 0, leader = 0, replicas = [0,], isr = [0,]), Partition(topic = test, partition = 0, leader = 0, replicas = [0,], isr = [0,])])
-16:48:34.212[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received group coordinator response ClientResponse(receivedTimeMs=1546937314212, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@18c3e224, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=test1}), createdTimeMs=1546937314078, sendTimeMs=1546937314179), responseBody={error_code=0,coordinator={node_id=0,host=songding.crhd0a.crc.hk,port=9092}})
-16:48:34.212[INFO ][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Discovered coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null) for group test1.
+16:48:34.212[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received group coordinator response ClientResponse(receivedTimeMs=1546937314212, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@18c3e224, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=TestPdfTextField}), createdTimeMs=1546937314078, sendTimeMs=1546937314179), responseBody={error_code=0,coordinator={node_id=0,host=songding.crhd0a.crc.hk,port=9092}})
+16:48:34.212[INFO ][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Discovered coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null) for group TestPdfTextField.
 16:48:34.212[DEBUG][Thread-1]o.apache.kafka.clients.NetworkClient - Initiating connection to node 2147483647 at songding.crhd0a.crc.hk:9092.
-16:48:34.214[INFO ][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Revoking previously assigned partitions [] for group test1
-16:48:34.214[INFO ][Thread-1]o.a.k.c.c.i.AbstractCoordinator - (Re-)joining group test1
-16:48:34.215[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Sending JoinGroup ({group_id=test1,session_timeout=30000,rebalance_timeout=300000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}]}) to coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null)
+16:48:34.214[INFO ][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Revoking previously assigned partitions [] for group TestPdfTextField
+16:48:34.214[INFO ][Thread-1]o.a.k.c.c.i.AbstractCoordinator - (Re-)joining group TestPdfTextField
+16:48:34.215[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Sending JoinGroup ({group_id=TestPdfTextField,session_timeout=30000,rebalance_timeout=300000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}]}) to coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null)
 16:48:34.215[DEBUG][Thread-1]o.a.kafka.common.metrics.Metrics - Added sensor with name node-2147483647.bytes-sent
 16:48:34.216[DEBUG][Thread-1]o.a.kafka.common.metrics.Metrics - Added sensor with name node-2147483647.bytes-received
 16:48:34.216[DEBUG][Thread-1]o.a.kafka.common.metrics.Metrics - Added sensor with name node-2147483647.latency
 16:48:34.216[DEBUG][Thread-1]o.a.kafka.common.network.Selector - Created socket with SO_RCVBUF = 65536, SO_SNDBUF = 131072, SO_TIMEOUT = 0 to node 2147483647
 16:48:34.216[DEBUG][Thread-1]o.apache.kafka.clients.NetworkClient - Completed connection to node 2147483647
 16:48:34.223[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful join group response for group test2: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143,member_id=consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143,members=[{member_id=consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}]}
-16:48:34.224[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful join group response for group test1: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,members=[{member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}]}
-16:48:34.224[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Performing assignment for group test1 using strategy range with subscriptions {consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a=Subscription(topics=[bar, test])}
+16:48:34.224[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful join group response for group TestPdfTextField: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,members=[{member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=21 cap=21]}]}
+16:48:34.224[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Performing assignment for group TestPdfTextField using strategy range with subscriptions {consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a=Subscription(topics=[bar, test])}
 16:48:34.224[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Performing assignment for group test2 using strategy range with subscriptions {consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143=Subscription(topics=[bar, test])}
-16:48:34.225[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Finished assignment for group test1: {consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a=Assignment(partitions=[bar-0, test-0])}
-16:48:34.225[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Sending leader SyncGroup for group test1 to coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null): {group_id=test1,generation_id=1,member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,group_assignment=[{member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=37 cap=37]}]}
+16:48:34.225[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Finished assignment for group TestPdfTextField: {consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a=Assignment(partitions=[bar-0, test-0])}
+16:48:34.225[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Sending leader SyncGroup for group TestPdfTextField to coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null): {group_id=TestPdfTextField,generation_id=1,member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,group_assignment=[{member_id=consumer-1-69327b99-e2cc-4eba-9720-2d07a05dac9a,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=37 cap=37]}]}
 16:48:34.229[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Finished assignment for group test2: {consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143=Assignment(partitions=[bar-0, test-0])}
 16:48:34.230[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Sending leader SyncGroup for group test2 to coordinator songding.crhd0a.crc.hk:9092 (id: 2147483647 rack: null): {group_id=test2,generation_id=1,member_id=consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143,group_assignment=[{member_id=consumer-2-a5ddb17f-0abc-476d-8bfb-975c3dcb7143,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=37 cap=37]}]}
-16:48:34.235[INFO ][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Successfully joined group test1 with generation 1
-16:48:34.236[INFO ][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Setting newly assigned partitions [bar-0, test-0] for group test1
+16:48:34.235[INFO ][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Successfully joined group TestPdfTextField with generation 1
+16:48:34.236[INFO ][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Setting newly assigned partitions [bar-0, test-0] for group TestPdfTextField
 16:48:34.236[INFO ][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Successfully joined group test2 with generation 1
 16:48:34.236[INFO ][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Setting newly assigned partitions [bar-0, test-0] for group test2
-16:48:34.237[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 fetching committed offsets for partitions: [bar-0, test-0]
-16:48:34.240[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 has no committed offset for partition bar-0
-16:48:34.240[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 has no committed offset for partition test-0
+16:48:34.237[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField fetching committed offsets for partitions: [bar-0, test-0]
+16:48:34.240[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField has no committed offset for partition bar-0
+16:48:34.240[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField has no committed offset for partition test-0
 16:48:34.241[DEBUG][Thread-1]o.a.k.c.consumer.internals.Fetcher - Resetting offset for partition bar-0 to earliest offset.
 16:48:34.243[DEBUG][Thread-1]o.apache.kafka.clients.NetworkClient - Initiating connection to node 0 at songding.crhd0a.crc.hk:9092.
 16:48:34.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 fetching committed offsets for partitions: [bar-0, test-0]
@@ -2409,16 +2409,16 @@
 16:48:35.249[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:35.249[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:35.251[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:35.325[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 0 for partition bar-0
-16:48:35.325[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 292 for partition test-0
+16:48:35.325[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 0 for partition bar-0
+16:48:35.325[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 292 for partition test-0
 16:48:36.241[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:36.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:36.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:36.343[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 0 for partition bar-0
-16:48:36.344[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 404 for partition test-0
+16:48:36.343[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 0 for partition bar-0
+16:48:36.344[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 404 for partition test-0
 16:48:37.247[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:48:37.249[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
-16:48:37.250[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:37.250[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:37.250[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:37.250[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:48:38.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
@@ -2431,7 +2431,7 @@
 16:48:40.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:40.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:40.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:40.253[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:40.253[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:41.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:41.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:41.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2442,7 +2442,7 @@
 16:48:43.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:43.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:43.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:43.254[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:43.254[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:44.240[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:44.240[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:44.240[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2453,7 +2453,7 @@
 16:48:46.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:46.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:46.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:46.255[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:46.255[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:47.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:47.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:47.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2464,7 +2464,7 @@
 16:48:49.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:49.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:49.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:49.257[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:49.257[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:50.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:50.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:50.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2475,7 +2475,7 @@
 16:48:52.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:52.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:52.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:52.258[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:52.258[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:53.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:53.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:53.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2486,7 +2486,7 @@
 16:48:55.240[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:55.240[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:55.241[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:55.257[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:55.257[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:56.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:56.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:56.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2497,7 +2497,7 @@
 16:48:58.241[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:58.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:58.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:48:58.259[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:48:58.259[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:48:59.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:48:59.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:48:59.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2508,7 +2508,7 @@
 16:49:01.241[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:01.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:01.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:01.261[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:01.261[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:02.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:02.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:02.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2519,7 +2519,7 @@
 16:49:04.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:04.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:04.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:04.261[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:04.261[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:05.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:05.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:05.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2530,7 +2530,7 @@
 16:49:07.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:07.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:07.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:07.262[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:07.262[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:08.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:08.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:08.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2541,7 +2541,7 @@
 16:49:10.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:10.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:10.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:10.262[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:10.262[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:11.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:11.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:11.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2552,7 +2552,7 @@
 16:49:13.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:13.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:13.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:13.262[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:13.262[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:14.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:14.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:14.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2563,7 +2563,7 @@
 16:49:16.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:16.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:16.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:16.263[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:16.263[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:17.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:17.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:17.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2574,7 +2574,7 @@
 16:49:19.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:19.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:49:19.253[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:49:19.264[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:19.264[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:20.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:20.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:20.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2584,7 +2584,7 @@
 16:49:22.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:22.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:22.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:22.266[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:22.266[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:22.270[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:23.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:23.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2595,7 +2595,7 @@
 16:49:25.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:25.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:25.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:25.266[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:25.266[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:25.292[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:26.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:26.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2606,7 +2606,7 @@
 16:49:28.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:28.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:28.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:28.266[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:28.266[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:28.316[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:29.242[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:29.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2617,7 +2617,7 @@
 16:49:31.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:31.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:31.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:31.269[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:31.269[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:31.337[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:32.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:32.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2628,7 +2628,7 @@
 16:49:34.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:34.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:34.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:34.270[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:34.270[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:34.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:35.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:35.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2639,7 +2639,7 @@
 16:49:37.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:37.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:37.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:37.270[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:37.270[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:37.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:38.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:38.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2650,7 +2650,7 @@
 16:49:40.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:40.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:40.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:40.269[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:40.269[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:40.343[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:41.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:41.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2661,7 +2661,7 @@
 16:49:43.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:43.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:43.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:43.271[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:43.271[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:43.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:44.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:44.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2672,7 +2672,7 @@
 16:49:46.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:46.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:46.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:46.270[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:46.270[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:46.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:47.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:47.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2683,7 +2683,7 @@
 16:49:49.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:49.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:49.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:49.271[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:49.271[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:49.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:50.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:50.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2694,7 +2694,7 @@
 16:49:52.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:52.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:52.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
-16:49:52.281[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:52.281[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:52.343[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
 16:49:53.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:53.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
@@ -2706,7 +2706,7 @@
 16:49:55.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:55.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:49:55.342[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:49:55.370[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:55.370[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:56.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:56.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:56.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2717,7 +2717,7 @@
 16:49:58.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:58.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:49:58.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:49:58.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:49:58.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:49:59.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:49:59.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:49:59.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2728,7 +2728,7 @@
 16:50:01.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:50:01.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:50:01.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:01.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:01.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:02.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:02.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:50:02.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2739,7 +2739,7 @@
 16:50:04.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:50:04.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:50:04.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:04.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:04.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:05.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:05.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:50:05.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
@@ -2750,7 +2750,7 @@
 16:50:07.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 404 for partition test-0
 16:50:07.243[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=404, metadata=''}} for group test2
 16:50:07.343[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:07.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:07.372[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:07.531[INFO ][main]o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = all
 	batch.size = 16384
@@ -2908,7 +2908,7 @@
 16:50:10.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 406 for partition test-0
 16:50:10.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=406, metadata=''}} for group test2
 16:50:10.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:10.401[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:10.401[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:11.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:11.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 407 for partition test-0
 16:50:11.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=407, metadata=''}} for group test2
@@ -2919,7 +2919,7 @@
 16:50:13.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 409 for partition test-0
 16:50:13.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=409, metadata=''}} for group test2
 16:50:13.345[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:13.499[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:13.499[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:14.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:14.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 410 for partition test-0
 16:50:14.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=410, metadata=''}} for group test2
@@ -2930,20 +2930,20 @@
 16:50:16.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 412 for partition test-0
 16:50:16.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=412, metadata=''}} for group test2
 16:50:16.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:16.503[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:16.503[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:17.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:17.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 413 for partition test-0
 16:50:17.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=413, metadata=''}} for group test2
 16:50:18.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:18.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 414 for partition test-0
 16:50:18.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=414, metadata=''}} for group test2
-16:50:18.805[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 0 for partition bar-0
-16:50:18.806[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 414 for partition test-0
+16:50:18.805[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 0 for partition bar-0
+16:50:18.806[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 414 for partition test-0
 16:50:19.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:19.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 415 for partition test-0
 16:50:19.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=415, metadata=''}} for group test2
 16:50:19.345[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:19.512[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:19.512[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:20.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:20.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 416 for partition test-0
 16:50:20.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=416, metadata=''}} for group test2
@@ -2954,7 +2954,7 @@
 16:50:22.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 418 for partition test-0
 16:50:22.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=418, metadata=''}} for group test2
 16:50:22.344[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:22.602[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:22.602[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:23.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:23.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 419 for partition test-0
 16:50:23.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=419, metadata=''}} for group test2
@@ -2965,7 +2965,7 @@
 16:50:25.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 421 for partition test-0
 16:50:25.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=421, metadata=''}} for group test2
 16:50:25.346[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:25.604[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:25.604[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:26.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:26.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 422 for partition test-0
 16:50:26.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=422, metadata=''}} for group test2
@@ -2976,9 +2976,9 @@
 16:50:28.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 424 for partition test-0
 16:50:28.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=424, metadata=''}} for group test2
 16:50:28.345[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:28.806[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
-16:50:28.808[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 0 for partition bar-0
-16:50:28.808[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 424 for partition test-0
+16:50:28.806[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
+16:50:28.808[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 0 for partition bar-0
+16:50:28.808[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 424 for partition test-0
 16:50:29.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:29.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 425 for partition test-0
 16:50:29.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=425, metadata=''}} for group test2
@@ -2989,7 +2989,7 @@
 16:50:31.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 427 for partition test-0
 16:50:31.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=427, metadata=''}} for group test2
 16:50:31.346[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:31.704[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:31.704[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:32.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:32.245[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 428 for partition test-0
 16:50:32.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=428, metadata=''}} for group test2
@@ -3000,7 +3000,7 @@
 16:50:34.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 430 for partition test-0
 16:50:34.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=430, metadata=''}} for group test2
 16:50:34.345[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:34.706[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:34.706[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:35.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:35.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 431 for partition test-0
 16:50:35.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=431, metadata=''}} for group test2
@@ -3011,12 +3011,12 @@
 16:50:37.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 433 for partition test-0
 16:50:37.244[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=433, metadata=''}} for group test2
 16:50:37.345[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:38.000[DEBUG][kafka-coordinator-heartbeat-thread | test1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:38.000[DEBUG][kafka-coordinator-heartbeat-thread | TestPdfTextField]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:38.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:38.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 434 for partition test-0
 16:50:38.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=434, metadata=''}} for group test2
-16:50:38.801[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 0 for partition bar-0
-16:50:38.802[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group test1 committed offset 434 for partition test-0
+16:50:38.801[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 0 for partition bar-0
+16:50:38.802[DEBUG][Thread-1]o.a.k.c.c.i.ConsumerCoordinator - Group TestPdfTextField committed offset 434 for partition test-0
 16:50:39.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:39.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 435 for partition test-0
 16:50:39.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=435, metadata=''}} for group test2
@@ -3024,7 +3024,7 @@
 16:50:40.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 436 for partition test-0
 16:50:40.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=436, metadata=''}} for group test2
 16:50:40.346[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:40.804[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:40.804[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:41.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:41.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 437 for partition test-0
 16:50:41.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=437, metadata=''}} for group test2
@@ -3035,7 +3035,7 @@
 16:50:43.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 439 for partition test-0
 16:50:43.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=439, metadata=''}} for group test2
 16:50:43.346[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:43.900[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:43.900[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:44.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:44.246[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 440 for partition test-0
 16:50:44.247[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=440, metadata=''}} for group test2
@@ -3153,7 +3153,7 @@
 16:50:46.687[DEBUG][main]o.a.kafka.common.metrics.Metrics - Added sensor with name bufferpool-wait-time
 16:50:46.690[DEBUG][main]o.a.kafka.common.metrics.Metrics - Added sensor with name buffer-exhausted-records
 16:50:46.700[DEBUG][main]org.apache.kafka.clients.Metadata - Updated cluster metadata version 1 to Cluster(id = null, nodes = [localhost:9092 (id: -1 rack: null)], partitions = [])
-16:50:46.932[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:46.932[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:47.137[DEBUG][main]o.a.kafka.common.metrics.Metrics - Added sensor with name connections-closed:
 16:50:47.137[DEBUG][main]o.a.kafka.common.metrics.Metrics - Added sensor with name connections-created:
 16:50:47.137[DEBUG][main]o.a.kafka.common.metrics.Metrics - Added sensor with name bytes-sent-received:
@@ -3204,7 +3204,7 @@
 16:50:49.263[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:49.263[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:50:49.365[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:50.009[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:50.009[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:50.265[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:50.265[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:50.266[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3342,7 +3342,7 @@
 16:50:52.268[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:52.268[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:50:52.377[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:53.041[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:53.041[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:53.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:53.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:53.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3353,7 +3353,7 @@
 16:50:55.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:55.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:50:55.366[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:56.043[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:56.043[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:56.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:56.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:56.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3364,7 +3364,7 @@
 16:50:58.269[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:58.269[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:50:58.366[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:50:59.042[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:50:59.042[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:50:59.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:50:59.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:50:59.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3375,7 +3375,7 @@
 16:51:01.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:01.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:51:01.365[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:51:02.052[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:51:02.052[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:51:02.269[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:51:02.269[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:02.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3386,7 +3386,7 @@
 16:51:04.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:04.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:51:04.430[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:51:05.052[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:51:05.052[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:51:05.269[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:51:05.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:05.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3397,7 +3397,7 @@
 16:51:07.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:07.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:51:07.448[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:51:08.052[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:51:08.052[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:51:08.268[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:51:08.268[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:08.269[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3408,7 +3408,7 @@
 16:51:10.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:10.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:51:10.464[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:51:11.053[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:51:11.053[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:51:11.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:51:11.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:11.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3419,7 +3419,7 @@
 16:51:13.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:13.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:51:13.487[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:51:14.053[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:51:14.053[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:51:14.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:51:14.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:14.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
@@ -3430,7 +3430,7 @@
 16:51:16.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:16.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
 16:51:16.505[DEBUG][Thread-0]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test2
-16:51:17.054[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group test1
+16:51:17.054[DEBUG][Thread-1]o.a.k.c.c.i.AbstractCoordinator - Received successful heartbeat response for group TestPdfTextField
 16:51:17.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 0 for partition bar-0
 16:51:17.270[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Group test2 committed offset 441 for partition test-0
 16:51:17.271[DEBUG][Thread-0]o.a.k.c.c.i.ConsumerCoordinator - Completed autocommit of offsets {bar-0=OffsetAndMetadata{offset=0, metadata=''}, test-0=OffsetAndMetadata{offset=441, metadata=''}} for group test2
